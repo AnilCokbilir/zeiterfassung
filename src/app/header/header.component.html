@@ -14,15 +14,9 @@
             <mat-form-field appearance="fill">
                 <mat-label>Profile</mat-label>
                 <mat-select>
-                    <mat-option>
-                        <span>Anil Cokbilir</span>
-
+                    <mat-option *ngFor="let name of userName; let i = index;">
+                        <span>{{name.userName}}</span>
                     </mat-option>
-                    <mat-option>
-                        <span>Florian Rehm</span>
-
-                    </mat-option>
-
                 </mat-select>
             </mat-form-field>
         </div>
